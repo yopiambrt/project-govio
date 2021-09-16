@@ -1,0 +1,112 @@
+    /*  */
+    
+     :root {
+        --hijau: #0E8D44;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .mockup {
+        /* width: 800px;
+    position: absolute;
+    left: 0;
+    z-index: -1; 
+    */
+        display: none;
+        margin-left: 0px;
+    }
+    
+    .login-form {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+        height: 100%;
+    }
+    
+    h4 {
+        color: var(--hijau);
+        font-size: 40px;
+    }
+    
+    p {
+        color: var(--hijau);
+    }
+    
+     ::placeholder {
+        font-size: 16px;
+        color: var(--hijau);
+    }
+    
+    label {
+        font-size: 14px;
+    }
+    
+    .btn {
+        width: 100%;
+        background-color: var(--hijau);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        color: white;
+    }
+    
+    .signup {
+        text-decoration: none;
+        color: var(--hijau);
+    }
+    
+    input[type='checkbox'] {
+        border: 2px solid #0E8D44;
+    }
+    
+    .login {
+        margin-right: 0;
+    }
+    /*  */
+    
+    @media (min-width: 992px) {
+        .mockup {
+            width: 900px;
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            display: flex;
+            margin-left: -150px;
+        }
+        .login-form {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+            height: 500px;
+        }
+        h4 {
+            color: var(--hijau);
+            font-size: 40px;
+        }
+        p {
+            color: var(--hijau);
+        }
+         ::placeholder {
+            font-size: 16px;
+            color: var(--hijau);
+        }
+        label {
+            font-size: 14px;
+        }
+        .btn {
+            width: 100%;
+            background-color: var(--hijau);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            color: white;
+        }
+        .signup {
+            text-decoration: none;
+            color: var(--hijau);
+        }
+        input[type='checkbox'] {
+            border: 2px solid #0E8D44;
+        }
+        .login {
+            margin-right: 100px;
+        }
+    }
