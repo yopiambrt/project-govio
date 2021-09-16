@@ -10,18 +10,27 @@ import TutorialPage from "../pages/tutorial";
 import Navbar from "../components/navbar";
 import Footer from '../components/footer';
 
+const Styled = React.lazy(() => import('../components/styled'));
 
 const Routes = ()=> {
     return(
           <React.Fragment>
             <Navbar/>
             <Switch>
-            <Route path="/" exact component={Homepage} />
-            <Route path="/about" exact component={AboutPage} />
             <Route path="/login" exact component={LoginPage} />
-            <Route path="/register" exact component={RegisterPage} />
-            <Route path="/service" exact component={ServicePage} />
-            <Route path="/tutorial" exact component={TutorialPage} />    
+            <Route path="*">
+            <React.Suspense fallback="">
+            <Styled>
+                <Switch>
+                    <Route path="/" exact component={Homepage} />
+                    <Route path="/about" exact component={AboutPage} />
+                    <Route path="/register" exact component={RegisterPage} />
+                    <Route path="/service" exact component={ServicePage} />
+                    <Route path="/tutorial" exact component={TutorialPage} /> 
+                </Switch>
+            </Styled>
+            </React.Suspense>
+            </Route>
         </Switch>
         <Footer/> 
         </React.Fragment>
