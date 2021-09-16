@@ -19,7 +19,7 @@ class Navbar extends Component{
                         <Link to="/about" className="nav-link ms-4">Tentang Kami</Link>
                         <Link to="/service" className="nav-link ms-4">Layanan</Link>
                         <Link to="/tutorial" className="nav-link ms-4">Cara Pakai</Link>
-                        <Link to="/login" className="nav-link ms-4">Login</Link>
+                        <a href="/login" className="nav-link ms-4">Login</a>
                         </div>
                     </div>
                 </div>
